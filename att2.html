@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura condicional</title>
+</head>
+<body>
+
+    <script>
+
+        /* Escreva um programa que verifique se um número é positivo, negativo ou zero. */
+
+        function maiorMenor(numero){
+
+            if(numero > 0){
+
+                console.log('Número positivo');
+
+            }else if(numero < 0){
+
+                console.log('Número negativo');
+
+            }else{
+
+                console.log('Número é zero');
+
+            }
+
+        }
+
+        maiorMenor(67);
+
+
+        /* Escreva um programa que determine se um número é par ou ímpar. */
+
+        function parImpar(numero){
+
+            if(numero % 2 == 0){
+
+                console.log(`O numero ${numero} é par`);
+
+            }else{
+
+                console.log(`O numero ${numero} é ímpar`);
+
+            }
+
+        }
+
+        parImpar(13);
+
+        /* Escreva um programa que classifique a idade de uma pessoa em "Criança", "Adolescente", "Adulto" ou "idoso" */
+
+        function ClassificacaoDeIdade(idade){
+
+            if(idade <= 12){
+
+                console.log('Você é uma criança');
+
+            }else if(idade >= 13 && idade <=17){
+
+                console.log('Você é um adolescente');
+
+
+            }else if(idade >= 18 && idade <= 64){
+
+                console.log("Você é um adulto");
+
+            }else{
+
+                console.log("Você é um idoso");
+
+            }
+
+        }
+        ClassificacaoDeIdade(17);
+
+        /* Escreva um programa que determine e classifique se uma nota(A, B, C, D, E) com base em seu valor númerico */
+
+        function classificacaoDeNota(nota){
+
+            if(nota >= 90 && nota <= 100) {
+
+                console.log("A");
+
+            }else if(nota >= 80 && nota < 90) {
+
+                console.log("B");
+
+            }else if(nota >= 70 && nota < 80) {
+
+                console.log("C");
+
+            }else if(nota >= 60 && nota < 70) {
+
+                console.log("D");
+
+            }else if(nota < 60) {
+
+                console.log("E");
+
+            }else{
+
+                console.log("Nota inválida");
+
+            }
+
+        }
+
+        classificacaoDeNota(100);
+        
+        /* Escreva um programa que, dado um número de 1 a 7, exiba o dia da semana correspondente */
+
+        function diaDaSemana(dia){
+
+            switch(dia){
+
+                case 1:
+                    console.log("Segunda-feira");
+                    break;
+                case 2:
+                    console.log("Terça-feira");
+                    break;
+                case 3:
+                    console.log("Quarta-feira");
+                    break;
+                case 4:
+                    console.log("Quinta-feira");
+                    break;
+                case 5:
+                    console.log("Sexta-feira");
+                    break;
+                case 6:
+                    console.log("Sabado");
+                    break;
+                case 7:
+                    console.log("Domingo");
+                    break;
+                default:
+                    console.log("Dia inválido");
+
+            }   
+
+        }
+
+        diaDaSemana(6);
+
+        /* Escreva um programa que cálcule o bônus de um vendedor com base em seu faturamento mensal: */
+
+        function faturamentoMensal(faturamento) {
+
+            if (faturamento < 1000) {
+
+                console.log(`Bônus: ${0}`);
+
+            } else if (faturamento >= 1000 && faturamento <= 5000) {
+
+                console.log(`Bônus: ${faturamento * 0.05}`);
+
+            } else if (faturamento > 5000) {
+ 
+                console.log(`Bônus: ${faturamento * 0.10}`);
+
+            }
+
+        }
+
+        faturamentoMensal(1000);
+
+    </script>
+    
+</body>
+</html>
