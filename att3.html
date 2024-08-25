@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de casa</title>
+</head>
+<body>
+
+    <!-- Tire apenas o comentario de um exercício para executar o mesmo,
+      após isso coloque de volta e faça o mesmo para executar o proximo -->
+    <script>
+
+        /*
+        
+            Esse exercício faz uma calculadora basica
+            Fiz sem parâmetros para conseguir colocar os valores recebidos no loop de forma mais simples.
+
+            OBS: Coloquei a elevação também, apenas pra diferenciar
+        
+        */
+        /*function calculadora(){
+
+            let opr = '';//Receberá a operação desejada
+            let numAnt, numSuc = 0;//Números a serem recebidos
+            let decis = 'sim';//Decisão para continuar na calculadora ou não
+
+            //Ações no loop para que o usuário saia quando desejar
+            while(decis.toLowerCase() == "sim"){
+
+                //Recebimento de dados
+                opr = prompt('Digite uma operação matematica:');
+                numAnt = parseInt(prompt('Digite o primeiro número:'));
+                numSuc = parseInt(prompt('Digite o Segundo número:'));
+
+                //Decisões e ações a serem tomadas
+                switch(opr.toLowerCase()){
+
+                    case 'soma':
+                        alert(`O resultado da sua soma é igual a ${numAnt + numSuc}`);
+                        break
+                    case 'multiplicação':
+                        alert(`O resultado da sua multiplicação é igual a ${numAnt * numSuc}`);
+                        break
+                    case 'divisão:':
+                        alert(`O resultado da sua divisão é igual a ${numAnt / numSuc}`);
+                        break
+                    case 'subtração':
+                        alert(`O resultado da sua subtração é igual a ${numAnt - numSuc}`);
+                        break
+                    case 'elevação':
+                        alert(`O resultado da sua elevação é igual a ${numAnt ** numSuc}`);
+                        break
+                    default:
+                        alert(`Erro`);
+
+                }
+
+                //Se o usuário irá desejar continuar executando ou não
+                decis = prompt('Deseja continuar?(sim/não)');
+
+            }
+
+            alert("Obrigada por usar nosso sistema!");
+
+        }
+
+        calculadora();*/
+
+        /*
+        
+        Esse exercicio retorna se o número é primo
+        Não consegui fazer sozinha, precisei de ajuda, matematica não é meu forte
+        
+        */
+        /*function numerosPrimos(n){
+
+            if (n <= 1) {
+                alert(`O número não ${n} é primo`);// Menor ou igual a 1 não é primo
+                return;
+            } else if (n <= 3) {
+                alert(`O número não ${n} é primo`);// 2 e 3 são primos
+                return;
+            } else if (n % 2 === 0 || n % 3 === 0) {
+                alert(`O número não ${n} é primo`);// Divisíveis por 2 ou 3 não são primos
+                return;
+                
+            }
+            
+            // Verifica divisores de 5 a raiz quadrada de n, pulando múltiplos de 2 e 3
+            for (let i = 5; i * i <= n; i += 6) {
+                if (n % i === 0 || n % (i + 2) === 0) {
+                    alert(`O número não ${n} é primo`);
+                    return;
+                }
+            }
+            alert(`O número ${n} é primo`);
+
+        }
+
+        numerosPrimos(20);*/
+
+
+        /*  Neste exercício contamos quantos caracteres especiais tem em uma frase */
+        /*function contCaracteres(string = ''){
+
+            let resultadoCont = 0;//Armazena o total de caracteres especiais
+            let cont = 0;//contador do while
+
+            //Vai se repetir até o final da string
+            while(cont < string.length){
+
+                //Com o switch estamos pegando cada caractere da frase usando fatiamento
+                switch(string[cont]){
+
+                    case '@':
+                        resultadoCont++;
+                        break
+                    case '#':
+                        resultadoCont++;
+                        break
+                    case '$':
+                        resultadoCont++;
+                        break
+                    case '%':
+                        resultadoCont++;
+                        break
+                    case '&':
+                        resultadoCont++;
+                        break
+
+                }
+                cont++;
+
+            }
+
+            //Exibe o resultado
+            alert(`Você tem ${resultadoCont} caracteres especiais em sua frase`);
+
+        }
+        contCaracteres(prompt('Escreva uma string:'));*/
+
+        
+        //Calcula a media de um aluno e retorna se foi aprovado ou não
+        /*function mediaAluno(
+                    nota1 = 0,
+                    nota2 = 0,
+                    nota3 = 0,
+                    nota4 = 0){
+            
+            //Calculo da media
+            let media = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3) + parseInt(nota4)) / 4;
+            
+            //Tomada de dicisão no código, onde o usuario saberá se foi aprovado ou não
+            if(media >= 7){
+
+                console.log(`Media ${media}, aprovado`);
+
+            }else if(media >= 5 && media < 7){
+
+                console.log(`Media ${media}, recuperação`);
+
+            }else{
+
+                console.log(`Media ${media}, reprovado`);
+
+            }
+
+        }
+
+        mediaAluno(prompt("Digite a primeira nota:"), prompt("Digite a segunda nota:"),
+                prompt("Digite a terceira nota:"), prompt("Digite a quarta nota:"));*/
+
+        //Pede para o usuario adivinhar o número que o computador deu.
+        /*function numeroAleatorio(){
+
+            let num = prompt('Adivinhe o número que o computador pensou: ');
+            let numero = Math.floor(Math.random() * 100);//Usando random para gerar um número aleatório.
+
+            //While que irá executar até o usuario acertar o número dado.
+            while(num != numero){
+
+                alert("Você errou.")
+
+                //Dica que será dada
+                if(numero > num){
+
+                    alert(`Seu número é maior que ${num}`);
+
+                }else{
+
+                    alert(`Seu número é menor que ${num}`);
+
+                }
+
+                //Peguntado o número novamente.
+                num = prompt('Adivinhe o número que o computador pensou: ');
+
+            }
+
+            alert("Você acertou!")
+
+        }
+
+        numeroAleatorio()*/
+    </script>
+</body>
+</html>
