@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa eletrônico</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Caixa eletrônico</h1>
+        <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/check-dollar.png" alt="check-dollar"/>
+    </header>
+
+    <main>
+
+        <form id="form1">
+
+            <label for="nome">Qual seu nome?</label>
+            <input type="text" placeholder="Seu nome" name="nome" id='nome' required>
+            <input type="button" value="Envie" id="enviarNome"/>
+
+        </form>
+
+        <section id='buttons'>
+
+            <button id="saldo" value="saldo">
+                Saldo
+                <img width="80" height="80" src="https://img.icons8.com/dotty/80/cheap-2.png" alt="cheap-2"/>
+            </button>
+            <button id="extrato" value="extrato">
+                Extrato
+                <img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/paper.png" alt="paper"/>
+            </button>
+            <button id="sacar" value="sacar">
+                Saque
+                <img width="80" height="80" src="https://img.icons8.com/dotty/80/money.png" alt="money"/>
+            </button>
+            <button id="depositar" value="depositar">
+                Depósito
+                <img width="80" height="80" src="https://img.icons8.com/dotty/80/bank-safe.png" alt="bank-safe"/>
+            </button>
+            <button id="transferencia" value="transferencia">
+                Transferência
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/>
+            </button>
+            <button id="sair" value="sair">
+                Sair
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/x.png" alt="x"/>
+            </button>
+            
+        </section>
+
+        <section id="retorno"></section>
+
+    </main>
+
+    <script src="./js/acoes.js"></script>
+</body>
+</html>

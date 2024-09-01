@@ -1,0 +1,151 @@
+/* Regras Gerais para o Body */
+body {
+    font-family: "Poppins", sans-serif; /* Fonte usada em todo o site */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+    color: #0c0664; /* Cor do texto */
+    background: #f3f3f3; /* Cor de fundo do body */
+}
+
+/* Estilo do Header */
+header {
+    font-weight: 700; /* Fonte em negrito */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+    text-align: center; /* Alinha o texto ao centro */
+    background: #f3f3f3; /* Cor de fundo do header */
+    display: flex; /* Usa flexbox para o layout */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    padding-left: 50px; /* Espaçamento interno à esquerda */
+}
+
+/* Estilo do Título do Formulário */
+#form1 h2 {
+    color: #fff; /* Cor do texto do título */
+}
+
+/* Estilo do Formulário */
+#form1 {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.31), /* Gradiente preto com 31% de opacidade */
+            rgba(0, 0, 0, 0.31)  /* Gradiente preto com 31% de opacidade */
+        ), 
+        url('../img/principal.jpg'); /* Imagem de fundo do formulário */
+    background-size: 80%; /* Tamanho do fundo ajustado para 80% do contêiner */
+    background-position: center; /* Posiciona a imagem de fundo no centro */
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: center; /* Alinha o conteúdo horizontalmente ao centro */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+    height: 50vh; /* Altura do formulário ajustada para 50% da altura da viewport */
+}
+
+/* Estilo dos Labels */
+label {
+    color: #fff; /* Cor do texto dos labels */
+    font-size: 1.4em; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    margin-right: 10px; /* Espaçamento à direita do label */
+}
+
+/* Estilo do Input de Nome */
+input[name='nome'] {
+    width: 30vw; /* Largura do input ajustada para 30% da largura da viewport */
+    height: 40px; /* Altura do input */
+    border-radius: 20px; /* Bordas arredondadas */
+    border: 1px solid gray; /* Borda cinza ao redor do input */
+    outline: none; /* Remove a borda padrão ao focar no input */
+    padding-left: 20px; /* Espaçamento interno à esquerda */
+}
+
+/* Estilo do Botão de Enviar Nome */
+#enviarNome {
+    width: 120px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    border: 1px solid #fff; /* Borda branca ao redor do botão */
+    border-radius: 15px; /* Bordas arredondadas */
+    background: #3217ea; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    display: block; /* Faz com que o botão seja exibido como bloco */
+    margin-left: 10px; /* Espaçamento à esquerda do botão */
+    font-weight: 600; /* Peso da fonte */
+}
+
+#enviarNome:hover {
+    transition: background 1s; /* Transição suave para a mudança de fundo */
+    background: rgb(2, 2, 118); /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo Geral para Inputs e Botões */
+input, button {
+    outline: none; /* Remove a borda padrão ao focar no input ou botão */
+    border: none; /* Remove a borda padrão do input e botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o elemento */
+}
+
+/* Estilo dos Botões de Seção */
+#buttons {
+    display: flex; /* Usa flexbox para o layout */
+    margin: 50px 40px 0; /* Margem ao redor dos botões */
+    justify-content: space-evenly; /* Espaçamento uniforme entre os botões */
+    position: relative; /* Permite ajustar a posição dos botões em relação ao contêiner pai */
+    top: -90px; /* Move os botões 90px acima da posição normal */
+}
+
+#buttons button {
+    background: rgb(252, 252, 252); /* Cor de fundo dos botões */
+    color: #000; /* Cor do texto dos botões */
+    width: 100px; /* Largura dos botões */
+    height: 80px; /* Altura dos botões */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Alinha os itens na direção da coluna */
+    align-items: center; /* Alinha itens horizontalmente ao centro */
+    justify-content: center; /* Alinha itens verticalmente ao centro */
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4); /* Sombra ao redor dos botões */
+}
+
+#buttons button:hover {
+    transition: background 1s; /* Transição suave para a mudança de fundo */
+    background: rgb(211, 211, 211); /* Cor de fundo do botão ao passar o mouse */
+}
+
+#buttons button.active {
+    background-color: rgb(211, 211, 211); /* Cor de fundo do botão quando ativo */
+}
+
+/* Estilo das Imagens dos Botões */
+#buttons button img {
+    width: 50%; /* Largura da imagem dos botões */
+    height: 50%; /* Altura da imagem dos botões */
+}
+
+/* Estilo da Seção de Retorno */
+#retorno {
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    background: rgb(171, 171, 171); /* Cor de fundo da seção de retorno */
+    height: 300px; /* Altura da seção de retorno */
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Alinha itens na direção da coluna */
+    justify-content: center; /* Alinha itens verticalmente ao centro */
+    align-items: center; /* Alinha itens horizontalmente ao centro */
+    color: #fff; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 2em; /* Tamanho da fonte */
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4); /* Sombra ao redor da seção de retorno */
+}
+
+#retorno input {
+    width: 300px; /* Largura do input na seção de retorno */
+    height: 30px; /* Altura do input */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo da Seção de Transferência */
+#transferencia {
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Alinha itens na direção da coluna */
+}
+
+#transferencia label {
+    font-size: 0.8em; /* Tamanho da fonte dos labels na seção de transferência */
+}
